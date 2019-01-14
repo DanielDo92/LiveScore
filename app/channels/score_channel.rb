@@ -7,6 +7,7 @@ class ScoreChannel < ApplicationCable::Channel
     # Any cleanup needed when channel is unsubscribed
   end
 
-  def speak
+  def speak(message)
+    ActionCable.server.broadcast "score_channel", message: "new_score"
   end
 end
