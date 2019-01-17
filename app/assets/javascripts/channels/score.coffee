@@ -8,7 +8,7 @@ App.score = App.cable.subscriptions.create "ScoreChannel",
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
     alert("1111")
-    location.reload()
+#    location.reload()
 
   speak: (message)->
     @perform 'speak', message: message
