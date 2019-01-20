@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: xxx
+  url: redis://99.99.99.999:6381
   channel_prefix: livescore_production
